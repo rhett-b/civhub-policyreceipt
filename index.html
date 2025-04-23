@@ -74,7 +74,6 @@
 <body>
 
 <div class="container">
-
   <div style="text-align: center; margin-top: 2rem;">
 
   <!-- Main Headlines -->
@@ -110,12 +109,50 @@
 |:::::::::::::::::::::::::::::::::::::::::::::|
 |OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO|
 |:::::::::::::::::::::::::::::::::::::::::::::|
-    |OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO|    
+|OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO|    
   </pre>
 
   <!-- Hidden Receipt -->
   <div class="receipt" id="receipt">
-    <!-- Generated receipt content will go here -->
+    <h2 style="font-size: 1.2rem; color: white; margin-bottom: 1rem;">Local Law 97</h2>
+    <p style="margin: 0 0 1.5rem; color: grey;">Policy Receipt</p>
+
+    <div style="margin-bottom: 1.5rem;">
+      <strong>Policy Overview:</strong>
+      <p>New York City's Local Law 97 is part of the Climate Mobilization Act. It requires buildings over 25,000 square feet to reduce greenhouse gas emissions by 40% by 2030 and 80% by 2050. Penalties apply for non-compliance.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <strong>CivHub Score:</strong>
+      <p style="color: lime; font-weight: bold;">+82</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <strong>Impact Breakdown:</strong>
+      <ul>
+        <li>🌍 Estimated 6 million metric tons CO2e reduction by 2030</li>
+        <li>🏢 Affects over 50,000 buildings in NYC</li>
+        <li>💸 $860M allocated for retrofit financing support</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <strong>Fiscal & Political Notes:</strong>
+      <p>Enacted in 2019 under Mayor Bill de Blasio, supported by progressive City Council members. Faced opposition from real estate developers. Subsequent amendments introduced compliance flexibility in 2022.</p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem; font-size: 0.8rem; color: #ccc;">
+      <strong>Sources:</strong>
+      <ul>
+        <li><a href="https://www.nyc.gov/assets/buildings/local_laws/ll97of2019.pdf" target="_blank">NYC Local Law 97 PDF</a></li>
+        <li><a href="https://www.urbangreencouncil.org/local-law-97/" target="_blank">Urban Green Council Overview</a></li>
+      </ul>
+    </div>
+
+    <div style="font-size: 0.7rem; color: #aaa; margin-top: 2rem;">
+      <strong>Methodology & Disclosures:</strong><br>
+      This receipt was generated using publicly available policy documents and verified reporting. Our scoring system considers long-term climate impact, policy scope, funding transparency, and stakeholder dynamics. While every effort is made to ensure accuracy, scores are estimates. This is a beta prototype intended for research and civic education only.
+    </div>
   </div>
 
   </div>
@@ -124,6 +161,7 @@
   function generateReceipt() {
     const receipt = document.getElementById('receipt');
     receipt.style.display = 'block';
+    receipt.scrollIntoView({ behavior: 'smooth' });
   }
 </script>
 
